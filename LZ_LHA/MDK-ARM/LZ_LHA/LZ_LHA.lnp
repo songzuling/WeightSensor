@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+".\lz_lha\stm32f4xx_it.o"
+".\lz_lha\stm32f4xx_hal_msp.o"
+".\lz_lha\main.o"
+".\lz_lha\system_stm32f4xx.o"
+".\lz_lha\startup_stm32f407xx.o"
+".\lz_lha\stm32f4xx_hal_flash.o"
+".\lz_lha\stm32f4xx_hal_adc_ex.o"
+".\lz_lha\stm32f4xx_hal_dma_ex.o"
+".\lz_lha\stm32f4xx_hal_dma.o"
+".\lz_lha\stm32f4xx_hal_flash_ramfunc.o"
+".\lz_lha\stm32f4xx_hal_adc.o"
+".\lz_lha\stm32f4xx_hal_tim.o"
+".\lz_lha\stm32f4xx_hal_flash_ex.o"
+".\lz_lha\stm32f4xx_hal_uart.o"
+".\lz_lha\stm32f4xx_hal_tim_ex.o"
+".\lz_lha\stm32f4xx_hal_rcc.o"
+".\lz_lha\stm32f4xx_hal_cortex.o"
+".\lz_lha\stm32f4xx_hal_gpio.o"
+".\lz_lha\stm32f4xx_hal.o"
+".\lz_lha\stm32f4xx_hal_pwr.o"
+".\lz_lha\stm32f4xx_hal_pwr_ex.o"
+".\lz_lha\stm32f4xx_hal_rcc_ex.o"
+--library_type=microlib --strict --scatter ".\LZ_LHA\LZ_LHA.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LZ_LHA.map" -o .\LZ_LHA\LZ_LHA.axf
