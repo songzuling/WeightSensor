@@ -78,6 +78,8 @@ HAL_StatusTypeDef s1;
 HAL_StatusTypeDef s2;
 HAL_StatusTypeDef s3;
 
+int tes = 0;
+
 int main(void)
 {
 
@@ -119,7 +121,7 @@ int main(void)
 
 
 
-/*用户初始化*/
+/*脫脙禄搂鲁玫脢录禄炉*/
 static void USER_GPIO_Init(void)
 {
     /*LED*/
